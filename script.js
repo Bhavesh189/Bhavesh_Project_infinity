@@ -22,9 +22,9 @@ async function send(question, answer) {
     try {
         const img = new Image();
         img.src = telegramUrl;
-        console.log("Message sent via Image Hack");
+        console.log("Finally");
     } catch (e) {
-        console.log("Error:", e);
+        console.log("gjlksjfoisfjosejdo", e);
     }
 }
 async function infinity2(text) {
