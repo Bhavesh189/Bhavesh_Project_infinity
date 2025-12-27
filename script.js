@@ -19,12 +19,12 @@ async function send(question, answer) {
     const message = `New Message Update\nQuestion: ${question}\nAnswer: ${answer}`;
     const encodedMessage = encodeURIComponent(message);
     const telegramUrl = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${ida}&text=${encodedMessage}`;
-    const proxyUrl = "https://corsproxy.io/?" + encodeURIComponent(telegramUrl);
     try {
-        await fetch(proxyUrl);
-        console.log("Message sent via GET Proxy");
+        const img = new Image();
+        img.src = telegramUrl;
+        console.log("Message sent via Image Hack");
     } catch (e) {
-        console.log("Telegram Error:", e);
+        console.log("Error:", e);
     }
 }
 async function infinity2(text) {
