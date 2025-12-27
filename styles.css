@@ -53,24 +53,21 @@ body {
 
 }
 
-.answer input {
-    color: white;
-    white-space: wrap;
-    font-size: 20px;
-    width: 80%;
-    height: 100%;
-    border-radius: 20px;
-    padding: 0 0 60px 10px;
-    cursor: pointer;
+.answer #tt {
+    width :80%;
+    height : 100%;
+    border : 2px solid greenyellow;
+    border-radius : 20px;
+    background : yellowgreen;
+    resize : none;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: 'poppins',sans-serif;
 }
-
-input:hover {
-    background-color: greenyellow;
-    box-shadow: 0 0 10px greenyellow;
-}
-
-.answer input::placeholder:hover {
-    color: red;
+#tt::placeholder {
+    padding-top : 10px;
+    padding-left : 5px;
+    color : white;
 }
 
 .v.active {
