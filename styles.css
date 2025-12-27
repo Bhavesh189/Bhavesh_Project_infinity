@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 29, 112);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+}
+
+.nav h3 {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.v {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+
+.answer {
+    position: fixed;
+    left: 10%;
+    height: 13%;
+    width: 100%;
+
+}
+
+.answer input {
+    color: white;
+    white-space: wrap;
+    font-size: 20px;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 0 0 60px 10px;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: greenyellow;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+.answer input::placeholder:hover {
+    color: red;
+}
+
+.v.active {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    justify-content: center;
+    gap: 60px;
+}
+
+.items i {
+    color: white;
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.items i:hover {
+    color: #00ff00;
+    transform: scale(1.1);
+}
+
+.output {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.output input {
+    width: 80%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 20px rgb(20, 255, 122);
+        transform: scale(1);
+        background-color: aqua;
+    }
+
+    to {
+        box-shadow: 0 0 60px cyan;
+        transform: scale(1.15);
+    }
+}
