@@ -66,7 +66,7 @@ body {
 }
 #tt::placeholder {
     padding-top : 10px;
-    padding-left : 5px;
+    padding-left : 5px; 
     color : white;
 }
 
