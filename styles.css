@@ -50,7 +50,6 @@ body {
     left: 10%;
     height: 13%;
     width: 100%;
-
 }
 
 .answer .tt {
@@ -130,5 +129,12 @@ input::placeholder {
     to {
         box-shadow: 0 0 60px cyan;
         transform: scale(1.15);
+    }
+}
+
+@media  screen and (max-width:460px){
+    .answer {
+        top : auto;
+        bottom : 25%;
     }
 }
