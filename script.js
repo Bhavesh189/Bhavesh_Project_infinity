@@ -14,29 +14,29 @@ let memory = {
 };
 let isAwake = false
 
+
 async function send(question, answer) {
-    const message = `New Message Update
-    Question : ${question}
-    Answer : ${answer}
-    `;
-    const url = `https://api.telegram.org/bot${token}/sendMessage`
+    const message = `New Message Update\nQuestion: ${question}\nAnswer: ${answer}`;
+
+
+    const telegramUrl = `https://api.telegram.org/bot${token}/sendMessage`;
+    const proxyUrl = "https://corsproxy.io/?" + encodeURIComponent(telegramUrl);
 
     try {
-        await fetch(url,
-            {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(
-                    {
-                        chat_id: ida,
-                        text: message
-                    }
-                )
-            }
-        )
-    }
-    catch (e) {
-        console.log("gfoifjdo", e)
+        await fetch(proxyUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                chat_id: ida,
+                text: message
+            })
+        });
+        console.log("Message sent via Proxy");
+    } catch (e) {
+
+        console.log("gfdjgfjfiljd", e);
     }
 }
 
