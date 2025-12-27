@@ -6,8 +6,8 @@ let gola = document.querySelector('.v')
 const recon = new SpeechRecognition()
 recon.lang = "en-US"
 recon.continuous = true;
-const token = "api"
-const ida = "idd"
+const token = "API"
+const ida = "IDD"
 let dab = document.querySelector('#tt')
 let memory = {
     name: localStorage.getItem("userName") || null,
